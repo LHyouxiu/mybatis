@@ -16,11 +16,11 @@ public class MybatisUtils {
             String resource = "mybatis-config.xml";
             InputStream resourceAsStream = Resources.getResourceAsStream(resource);
             build = new SqlSessionFactoryBuilder().build(resourceAsStream);
-
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
+
 
     public static SqlSession getSqlSession(){
         SqlSession sqlSession = build.openSession(true);
