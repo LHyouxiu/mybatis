@@ -23,7 +23,7 @@ public class MybatisUtils {
 
 
     public static SqlSession getSqlSession(){
-        SqlSession sqlSession = build.openSession();
+        SqlSession sqlSession = build.openSession(true);
         return sqlSession;
     }
 }
