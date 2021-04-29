@@ -7,6 +7,6 @@ import org.apache.ibatis.annotations.Select;
 import java.util.List;
 
 public interface UserMapper {
-    @Select("select * for user")
+    @Select("select * from user")
     List<User> getUserAll();
 }
