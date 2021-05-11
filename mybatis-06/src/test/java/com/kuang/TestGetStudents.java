@@ -34,4 +34,18 @@ public class TestGetStudents {
             );
         }
     }
+
+    @Test
+    public void getStudents3(){
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+        StudentMapper mapper = sqlSession.getMapper(StudentMapper.class);
+
+        List<Student> student3 = mapper.getStudent3();
+        for (Student student : student3) {
+            System.out.println(
+                    "学生名：" + student.getName()+
+                            "\t老师:" +student.getTeacher().getName()
+            );
+        }
+    }
 }

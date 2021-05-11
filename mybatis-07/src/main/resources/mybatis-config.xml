@@ -7,12 +7,13 @@
     <properties resource="db.properties"></properties>
 
     <settings>
-        <setting name="logImpl" value="log4j"/>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
     </settings>
 
     <typeAliases>
         <package name="com.kuang.pojo"/>
-<!--        <typeAlias type="" alias=""/>-->
+        <!--        <typeAlias type="" alias=""/>-->
     </typeAliases>
 
     <environments default="development">
@@ -27,7 +28,6 @@
         </environment>
     </environments>
     <mappers>
-        <mapper resource="com/kuang/dao/StudentMapper.xml"/>
-        <mapper resource="com/kuang/dao/TeacherMapper.xml"/>
+        <mapper resource="com/kuang/dao/BlogMapper.xml"/>
     </mappers>
 </configuration>

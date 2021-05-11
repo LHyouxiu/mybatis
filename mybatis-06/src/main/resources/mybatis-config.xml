@@ -12,6 +12,7 @@
 
     <typeAliases>
         <package name="com.kuang.pojo"/>
+<!--        <typeAlias type="" alias=""/>-->
     </typeAliases>
 
     <environments default="development">
